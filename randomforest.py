@@ -71,7 +71,7 @@ class RandomForestClassifier(object):
         n_samples = len(y)
         correct = 0
         for i in xrange(n_samples):
-            if y_predict[i] is y[i]:
+            if y_predict[i] == y[i]:
                 correct = correct + 1
         accuracy = correct/n_samples
         return accuracy
